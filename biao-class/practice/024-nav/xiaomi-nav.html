@@ -1,0 +1,102 @@
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        font-family: sans-serif;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .nav {
+        color: #ccc;
+        background: #444;
+        font-size: 13px;
+    }
+    .col {
+        float: left;
+    }
+    .col-8 {
+        width: 33.333333333333333%;
+    }
+    .col-16 {
+        width: 66.666666666666666%;
+    }
+    .right {
+        text-align: right;
+    }
+    /* .pipe {
+        border: 0.6px solid rgba(200,200,200,0.3);
+        display: inline-block;
+        width: 2px;
+        height: 1em;
+        background: #666;
+        position: relative;
+        top: 2px;
+        right: 5px;
+    } */
+    .nav a,
+    .nav-item {
+        display: inline-block;
+        padding: 0.6em 1.2em 0.6em 0;
+    }
+    .global .button{
+        background: #666;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        /* color: #ccc;
+        background: #666; */
+    }
+    .row::before,
+    .row:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .nav a:after {
+        content: "";
+        display: inline-block;
+        background: #666;
+        width: 1px;
+        height: 1em;
+        position: relative;
+        left: 0.7em;
+        top: 0.1em;
+    }
+    .nav a:last-of-type:after {
+        content: "";
+        display: none;
+    }
+    .nav a:hover {
+        color: #fff;
+    }
+    /* .container{
+        max-width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+</style>
+<body>
+    <div class="row nav global">
+        <div class="col col-16 left">
+            <a href="#">小米商城</a>
+            <a href="#">MIUI</a>
+            <a href="#">IoT</a>
+            <a href="#">云服务</a>
+            <a href="#">金融</a>
+            <a href="#">有品</a>
+            <a href="#">小爱开放平台</a>
+            <a href="#">政企服务</a>
+            <a href="#">Select Region</a>
+        </div>
+        <div class="col col-8 right">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#">消息通知</a>
+            <!-- <a href="#" class="button">购物车</a> -->
+            <span href="#" class="button nav-item">购物车</span>
+        </div>
+    </div>
+</body>

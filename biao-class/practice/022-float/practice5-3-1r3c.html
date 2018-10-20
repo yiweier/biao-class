@@ -1,0 +1,24 @@
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .rwo::before,
+    .rwo:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .col {
+        float: left;
+        width: 25%;
+        border: dashed;
+    }
+    .col:first-of-type {
+        width: 50%;
+    }
+</style>
+<div class="row">
+    <div class="col">a</div>
+    <div class="col">b</div>
+    <div class="col">c</div>
+</div>

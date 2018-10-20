@@ -1,0 +1,35 @@
+<style>
+    div {
+        box-sizing: border-box;
+        /* border: solid 10px red; */
+    }
+    .row {
+        margin: 10px;
+    }
+    .row:before,
+    .row:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .col {
+        border: solid;
+        float: left;
+    }
+    .left {
+        width:30%
+    }
+    
+    .right {
+        width:70%
+    }
+</style>
+<div class="row">
+    <div class="col left">1</div>
+    <div class="col right">2</div>
+</div>
+<div class="row">
+    <div class="col left">1</div>
+    <div class="col right">2</div>
+</div>
+   

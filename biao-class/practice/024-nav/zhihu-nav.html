@@ -1,0 +1,162 @@
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        color: #555;
+        margin: 0;
+        background: #eee;
+        font-family: sans-serif;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    form {
+        margin: 0;
+    }
+   
+    .col-1 {
+        width: 4.166666666666666%;
+    }
+    .col-2 {
+        width: 8.333333333333333%;
+    }
+    .col-3 {
+        width: 12.5%;
+    }
+    .col-4 {
+        width: 16.666666666666666%;
+    }
+    .col-5 {
+        width: 20.833333333333333%;
+    }
+    .col-6 {
+        width: 25%;
+    }
+    .col-7 {
+        width: 29.166666666666666%;
+    }
+    .col-8 {
+        width: 33.333333333333333%;
+    }
+    .col-9 {
+        width: 37.5%;
+    }
+    .col-10 {
+        width: 41.666666666666666%;
+    }
+    .col-11 {
+        width: 45.833333333333333%;
+    }
+    .col-12 {
+        width: 50%;
+    }
+    .col-13 {
+        width: 54.166666666666666%;
+    }
+    .col-14 {
+        width: 58.333333333333333%;
+    }
+    .col-15 {
+        width: 62.5%;
+    }
+    .col-16 {
+        width: 66.666666666666666%;
+    }
+    .col-17 {
+        width: 70.833333333333333%;
+    }
+    .col-18 {
+        width: 75%;
+    }
+    .col-19 {
+        width: 79.166666666666666%;
+    }
+    .col-20 {
+        width: 83.333333333333333%;
+    }
+    .col-21 {
+        width: 87.5%;
+    }
+    .col-22 {
+        width: 91.666666666666666%;
+    }
+    .col-23 {
+        width: 95.833333333333333%;
+    }
+    .col-24 {
+        width: 100%;
+    }
+    .row:before,
+    .row:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .nav {
+        background: #fff;
+        border: 1px solid rgba(0,0,0,.1);
+    }
+    .col {
+        float: left;
+    }
+    
+    .right>* {
+        /* text-align: right; */
+        float: right;
+    }
+    .nav a{
+        display: inline-block;
+        padding: 1em;
+    }
+    .nav .logo {
+        padding: 1em;
+    }
+    .nav .text {
+        color: #888;
+    }
+    .nav .search {
+        padding: 0.5em;
+    }
+    /* .nav .search-bar,
+    .nav button {
+        padding: 1em;
+        /* margin: 0; */
+    } */
+    
+    /* .nav .button {
+        width: 80px;
+        height: 2.6em;
+        background: rgba(0,0,250,.7);
+        color: #eee;
+    } */
+    .nav .icon {
+        padding: 1em;
+    }
+    .nav .text:hover {
+        color: royalblue;
+    }
+    .nav .search-bar:focus {
+        /* border: 1px solid rgba(0,0,0,1); */
+        outline: solid rgba(0,0,0,.3);
+    }
+   
+</style>
+<div class="row nav global">
+    <div class="col col-2 logo">知乎</div>
+    <div class="col col-6 link-group">
+        <a href="#">首页</a>
+        <a href="#" class="text">发现</a>
+        <a href="#" class="text">话题</a>
+    </div>
+    <form class="col col-10 search">
+        <input type="search" class="search-bar" placeholder="国庆参加婚礼送什么">
+        <button class="button">提问</button>
+    </form>
+    <div class="col col-6 right">
+        <div class="col icon">item</div>
+        <div class="col icon">item</div>
+        <div class="col icon">item</div>
+    </div>
+</div>
