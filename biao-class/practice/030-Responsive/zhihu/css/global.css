@@ -17,7 +17,7 @@ input {
 button {
     width: 50px;
 }
-,
+
 input:focus,
 button:focus {
     border: 1px solid #0084ff;

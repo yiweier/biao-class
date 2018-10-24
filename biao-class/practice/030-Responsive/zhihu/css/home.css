@@ -21,7 +21,7 @@
 .timeline .tab span.active:after {
     content: "";
     display: inline-block;
-    border-bottom: 1px solid #0084ff; 
+    /* border-bottom: 1px solid #0084ff;  */
     width: 60%;
     height: 1px;
     background: #0084ff;

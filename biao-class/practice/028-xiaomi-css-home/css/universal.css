@@ -17,6 +17,9 @@ a {
     color: inherit;
     display: inline-block;
 }
+img {
+    width: 100%;
+}
 input,
 button {
     outline: 0;
@@ -44,6 +47,9 @@ button {
 }
 .text-right {
 	text-align: right;
+}
+.text-center {
+    text-align: center;
 }
 .row:before,
 .row:after {

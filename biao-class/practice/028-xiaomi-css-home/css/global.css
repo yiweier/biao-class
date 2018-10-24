@@ -79,4 +79,19 @@ button:hover {
     background: #ff6700;
     color: #eee;
 }
-
+.traction {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.border-t-o {
+    border-top: 1px solid #ffac13;
+}
+.border-t-red {
+    border-top: 1px solid #b10;
+}
+.border-t-green {
+    border-top: 1px solid green;
+}
+.border-t-blue {
+    border-top: 1px solid blue;
+}
