@@ -1,0 +1,119 @@
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	body{
+		font-size: 12px;
+		font-family: sans-serif;
+		line-height: 2;
+	}
+	a {
+		text-decoration: none;
+		color: #666;
+		display: inline-block;		
+	}
+	img {
+		width: 100%;
+	}
+	.container {
+		max-width: 1080px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.nav .container {
+		display: flex;
+		justify-content: space-between;
+	}
+	.nav .link-group a {
+		padding: 10px 20px;
+		font-size: 13px;
+	}
+	.nav a:hover{
+		border-bottom: 1px solid #666;
+	}
+	.nav .link-group a:hover{
+		color: #b10;
+		border-bottom-color: #b10;
+	}
+	.card-group {
+		margin-top: 30px;
+
+	}
+	.card-group .container .row{
+		display: flex;
+		/*justify-content: space-between;*/
+		
+	}
+	.card-group .container >.row {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.card-group .card {
+		margin-left: 10px;
+		margin-right: 10px;
+		box-shadow: 0 2px 3px rgba(0,0,0,.1);
+		transition: all 0.2s;
+	}
+	.card-group .card:hover {
+		transform: translateY(-3px);
+	}
+	.card-group .text {
+		padding: 30px;
+	}
+	.card-group .text .title {
+		font-size: 18px;
+	}
+</style>
+<body>
+	<div class="nav">
+		<div class="container">
+			<a class="logo">logo</a>
+			<div class="link-group">
+				<a href="#">Oneplus 6</a>
+				<a href="#">商城</a>
+				<a href="#">服务</a>
+				<a href="#">品牌</a>
+				<a href="#">论坛</a>
+			</div>
+			<div class="icon">
+				<a href="#">a</a>
+				<a href="#">b</a>
+				<a href="#">c</a>
+			</div>
+		</div>
+	</div>
+	<div class="card-group">
+		<div class="container">
+			<div class="row">
+				<a class="card">
+					<div class="img">
+						<img src="https://image01.oneplus.cn/shop/201810/22/849/22910d18ae0add39b63a33abfbf7fb87.jpg">
+					</div>
+					<div class="text">
+						<div class="title">博客</div>
+						<div class="desc">百万土豆大叔 Kevin Abosch 和 OnePlus 的影像之缘</div>
+					</div>
+				</a>
+				<a class="card col-4">
+					<div class="img">
+						<img src="https://image01.oneplus.cn/shop/201810/10/644/50a4a33de2e2f5e036f5796e55232aec.jpg">
+					</div>
+					<div class="text">
+						<div class="title">新闻</div>
+						<div class="desc">Oneplus 6t,来了</div>
+					</div>
+				</a>
+				<a class="card col-4">
+					<div class="img">
+						<img src="https://image01.oneplus.cn/shop/201810/17/1834/ab3aa0a023b295546c47212406ef232c.jpg">
+					</div>
+					<div class="text">
+						<div class="title">技巧</div>
+						<div class="desc">Oneplus 6 使用技巧</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>

@@ -1,0 +1,140 @@
+/*===========head==============*/
+body{
+	background-image: url(../img/background.jpg);
+	
+}
+.head {
+	padding-top: 200px;
+	padding-bottom: 150px;
+}
+.head .title,
+.head .describe {
+	display: flex;
+	justify-content: center;
+}
+.head .title>* {
+	font-size: 100px;
+	font-weight: bolder;
+	color: #333;
+	padding: 30px;
+
+}
+
+.head .describe {
+	font-size: 30px;
+	padding-top: 70px;
+	color: #444;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*===========main serch==========*/
+.main .left * {
+	text-align: center
+}
+.main .logo{
+	position: relative;
+	margin-left: 5%;
+}
+.main .logo img{
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	/*display: inline-block;*/
+}
+.main .logo span{
+	position: absolute;
+    top: 0;
+    left: 15%;
+    font-size: 15px;
+    color: #333;
+}
+
+.main .search {
+	justify-content: space-between;
+	align-items: center; 
+}
+.main .search .logo{
+	flex-grow: 1;
+} 
+.main .search form {
+	flex-grow: 2;
+	position: relative;
+
+}
+.main .search input{
+	width: 85%;
+	padding: 20px;
+	font-size: 15px;
+	border-color: #fff;
+}
+.main .search input:focus {
+	background: #eee;
+}
+.main .search button {
+	position: absolute;
+	right: 16%;
+    top: 3%;
+	font-size: 20px;
+	padding-top: 13px;
+	padding-bottom: 16px;
+	border: 0;
+	color: #fff;
+}
+/*===========main subject=========*/
+.main .left .text {
+	margin-top: 20px;
+	text-align: center;
+}
+.main .left .text>* {
+	display: block;
+	padding: 10px 20px;
+	color: #333;
+	font-size: 20px;
+	border: 2px solid #666;
+	border-radius: 5px;
+	margin-top: 30px;
+}
+.main .left .text>*:hover {
+	background: #eee;
+}
+.main .middle .theme{
+	justify-content: space-between;
+}
+.main .middle .article-list{
+	margin: 30px;
+	border: 1px solid #666;
+	border-radius: 3px;
+}
+.main .middle .article-list .theme {
+	background: #aaa;
+	color: #eee;
+}
+.main .middle .article-list >* {
+	padding: 1em;
+}
+.main .middle .article-list .article {
+	padding: .5em;
+}
+.main .middle .article-list .title {
+	font-weight: bold;
+}
+.main .right a:hover ,
+.main .middle .article .title:hover {
+	text-decoration: underline;
+}
+.main .middle .paging {
+	justify-content: center;
+	width: 50%;
+    margin-left: 25%;
+}
+.main .middle .paging >*{
+	flex-grow: 1;
+}
+.main .right .link-group {
+	text-align: center;
+}
+.main .right a {
+	padding: 2.5em 1.5em;
+}
+

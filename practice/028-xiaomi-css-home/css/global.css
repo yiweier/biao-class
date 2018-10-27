@@ -1,0 +1,97 @@
+/* ==========nav global=========== */
+.global {
+    color: #ccc;
+    background: #333;
+}
+.global a {
+    padding: 1rem .5rem;
+}
+.global a:hover {
+    color: #fff;
+}
+.global .left a:after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 1em;
+    background: #444;
+    position: relative;
+    top: 2px;
+    left: .7em;
+}
+.global .left a:last-child:after {
+    display: none;
+}
+.global .lighter {
+    background: #555;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+/* ==============nav page============== */
+.page .logo {
+    background: #ff6700;
+}
+.page .icon {
+    margin-top: 1em;
+}
+.page .icon >* {
+    vertical-align: middle;
+}
+.page .link-group a {
+    padding: 3em .5em;
+    font-size: 14px;
+}
+.page .link-group a:hover {
+    color: #ff6700;
+}
+input,
+button {
+    padding: 1.5em;
+}
+form {
+    font-size: 0;
+    margin-top: 2rem;
+}
+input {
+    width: 80%;
+    border-right-width: 0;
+}
+button {
+    width: 20%;
+    background: transparent;
+}
+.page .example{
+    font-size: 12px;
+}
+.page .example>*{
+    padding: 1px;
+    background: #eee;
+    position: relative;
+    bottom: 31px;
+    left: 105px;
+    color: #666;
+}
+input:focus,
+button:focus {
+    border: 1px solid #ff6700;
+}
+button:hover {
+    background: #ff6700;
+    color: #eee;
+}
+.traction {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.border-t-o {
+    border-top: 1px solid #ffac13;
+}
+.border-t-red {
+    border-top: 1px solid #b10;
+}
+.border-t-green {
+    border-top: 1px solid green;
+}
+.border-t-blue {
+    border-top: 1px solid blue;
+}

@@ -1,0 +1,130 @@
+@media screen and (max-width: 500px){
+    body {
+        font-size: 12px;
+    }
+    .col-sm-1 {
+        flex-basis: 4.166666666666666%;
+    }
+    .col-sm-2 {
+        flex-basis: 8.333333333333333%;
+    }
+    .col-sm-3 {
+        flex-basis: 12.5%;
+    }
+    .col-sm-4 {
+        flex-basis: 16.666666666666666%;
+    }
+    .col-sm-5 {
+        flex-basis: 20.8333333333333333%;
+    }
+    .col-sm-6 {
+        flex-basis: 25%;
+    }
+    .col-sm-7 {
+        flex-basis: 29.166666666666666%;
+    }
+    .col-sm-8 {
+        flex-basis: 33.333333333333333%;
+    }
+    .col-sm-9 {
+        flex-basis: 37.5%;
+    }
+    .col-sm-10 {
+        flex-basis: 41.666666666666666%;
+    }
+    .col-sm-11 {
+        flex-basis: 45.833333333333333%;
+    }
+    .col-sm-12 {
+        flex-basis: 50%;
+    }
+    .col-sm-13 {
+        flex-basis: 54.166666666666666%;
+    }
+    .col-sm-14 {
+        flex-basis: 58.333333333333333%;
+    }
+    .col-sm-15 {
+        flex-basis: 62.5%;
+    }
+    .col-sm-16 {
+        flex-basis: 66.666666666666666%;
+    }
+    .col-sm-17 {
+        flex-basis: 70.833333333333333%;
+    }
+    .col-sm-18 {
+        flex-basis: 75%;
+    }
+    .col-sm-19{
+        flex-basis: 79.166666666666666%;
+    }
+    .col-sm-20 {
+        flex-basis: 83.333333333333333%;
+    }
+    .col-sm-21 {
+        flex-basis: 87.5%;
+    }
+    .col-sm-22 {
+        flex-basis: 91.666666666666666%;
+    }
+    .col-sm-23 {
+        flex-basis: 95.833333333333333%;
+    }
+    .col-sm-24 {
+        flex-basis: 100%;
+    }
+    .head .title>*{
+        font-size: 40px;
+    }
+    .head .describe{
+        font-size: 11.5px;
+        padding-top: 10px;
+    }
+    /* .main .search{
+        display: block;
+    } */
+    .main .logo img {
+        width: 100px;
+        height: 100px;
+    }
+    .main .logo span {
+        position: absolute;
+        left: 29px;
+        font-size: 10px;
+    }
+    .main .search form {
+        margin-top: 22px;
+    }
+    .main .search input {
+        padding: 14px;
+        font-size: 12px;
+    }
+    .main .search button {
+        right: 15%;
+        top: 2%;
+        font-size: 13px;
+    }
+    .main .subject {
+        display: block;
+    }
+    .main .left .text{
+        display: flex;
+        margin-top: 0;
+        justify-content: center;
+    }
+    .main .left .text>* {
+        padding: 7px 8px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .main .middle .article-list {
+        margin: 10px 0;
+    }
+    .main .middle .article-list >*{
+        padding: .5em;
+    }
+    .main .middle .paging >*{
+        text-align: center;
+    }
+}

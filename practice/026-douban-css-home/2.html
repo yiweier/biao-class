@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>豆瓣</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        form,body {
+            margin: 0;
+        }
+        body {
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+        img {
+            width: 100%;
+        }
+        a {
+            text-decoration: none;
+        }
+        .row:before,
+        .row:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .col {
+            float: left;
+            /* padding: 10px; */
+        }
+        .col-1 {
+        width: 4.166666666666666%;
+        }
+        .col-2 {
+            width: 8.333333333333333%;
+        }
+        .col-3 {
+            width: 12.5%;
+        }
+        .col-4 {
+            width: 16.666666666666666%;
+        }
+        .col-5 {
+            width: 20.8333333333333333%;
+        }
+        .col-6 {
+            width: 25%;
+        }
+        .col-7 {
+            width: 29.166666666666666%;
+        }
+        .col-8 {
+            width: 33.333333333333333%;
+        }
+        .col-9 {
+            width: 37.5%;
+        }
+        .col-10 {
+            width: 41.666666666666666%;
+        }
+        .col-11 {
+            width: 45.833333333333333%;
+        }
+        .col-12 {
+            width: 50%;
+        }
+        .col-13 {
+            width: 54.166666666666666%;
+        }
+        .col-14 {
+            width: 58.333333333333333%;
+        }
+        .col-15 {
+            width: 62.5%;
+        }
+        .col-16 {
+            width: 66.666666666666666%;
+        }
+        .col-17 {
+            width: 70.833333333333333%;
+        }
+        .col-18 {
+            width: 75%;
+        }
+        .col-19{
+            width: 79.166666666666666%;
+        }
+        .col-20 {
+            width: 83.333333333333333%;
+        }
+        .col-21 {
+            width: 87.5%;
+        }
+        .col-22 {
+            width: 91.666666666666666%;
+        }
+        .col-23 {
+            width: 95.833333333333333%;
+        }
+        .col-24 {
+            width: 100%;
+        }
+        .container {
+            max-width: 1080px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .text-right {
+            text-align: right;
+        }
+        .nav.global {
+            background: #555;
+        }
+        .nav.global a {
+            display: inline-block;
+            color: #ddd;
+            padding: .5em .7em;
+        }
+        .nav.global a:hover{
+            color: #fff;
+        }
+        .nav.page {
+            background: #f0f6f3;
+        }
+        /* .nav.page .logo {
+            width: 150px;
+        } */
+        .nav.page .link-group a {
+            display: inline-block;
+            font-size: 15px;
+            color: #037b82;
+            padding: 2em .8em;
+        }
+        .nav.page .link-group a:hover {
+            color: #666699;
+            background: lightgreen;
+        }
+        .nav.page input,
+        .nav.page button {
+            outline: 0;
+            padding: 8px 6px;
+            border: 1px solid rgba(0,0,0,.15);
+            color: #444;
+        }
+        .nav.page .search {
+            padding: 2em 0.8em;
+            position: relative;
+        }
+        .nav.page input {
+            width: 100%;
+        }
+        .nav.page button {
+            border: 0;
+            background: 0;
+            position: absolute;
+            top: 23px;
+            left: 235px
+        }
+        .nag.page input:focus{
+            border: 1px solid #037b82;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row nav global">
+        <div class="container">
+            <div class="col col-16">
+                <a href="#">豆瓣</a>
+                <a href="#">读书</a>
+                <a href="#">电影</a>
+                <a href="#">音乐</a>
+                <a href="#">同城</a>
+                <a href="#">小组</a>
+                <a href="#">阅读</a>
+                <a href="#">FM</a>
+                <a href="#">时间</a>
+                <a href="#">豆品</a>
+                <a href="#">更多</a>
+            </div>
+            <div class="col col-8 text-right">
+                <a href="#">下载豆瓣客户端</a>
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="row nav page">
+            <div class="container">
+                <a href="#" class="col col-4 logo">
+                    <img src="./logo.png">
+                </a>
+                <div class="col col-14 link-group">
+                    <a href="#">精选</a>
+                    <a href="#">文化</a>
+                    <a href="#">行摄</a>
+                    <a href="#">娱乐</a>
+                    <a href="#">时尚</a>
+                    <a href="#">生活</a>
+                    <a href="#">科技</a>
+                </div>
+                <form class="col col-6 search">
+                    <input type="search" placeholder="小组、话题">
+                    <button type="submit">搜</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <h1 class="title">讨论精选</h1>
+                <div class="row">
+                    <div class="col col-16">
+                        <div class="row">
+                            <div class="col col-4 like">
+                                <div>
+                                    <div>3</div>
+                                    <div>喜欢</div>
+                                </div>
+                            </div>
+                            <div class="col col-20">
+                                <div class="title">有没有什么特别香的发油啊？发香喷雾也行</div>
+                                <div class="describe">很想营造成发香的感觉，目前用的洗护用品其实也是玫瑰香味的，但是也就维持那么一小会儿。。。 稍后我会把大家推荐的发香喷雾和发油什么的全写在主文里，这样大家比较一目了然 发油类： 卡诗白茶发油（粉色瓶的就是...</div>
+                                <div class="from">
+                                    <span>来自</span>
+                                    <a href="#">我爱化妆品（美容美体、化妆护肤）小组</a>
+                                    <span>今天16:48</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-8">
+                        <div class="title"></div>
+                        <div class="row">
+                            <div class="col col-6">
+                                <img src="http://dummimage.com/30">
+                            </div>
+                            <div class="col col-18">
+                                <div class="title">句子迷</div>
+                                <div class="others">
+                                    <span>337794个喜欢好句子的句子迷</span>
+                                    <a href="#">+加入小组</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row footer">
+        <div class="container">
+            <div class="col col-12">© 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司</div>
+            <div class="col col-12 text-right">
+                <a href="#">关于豆瓣</a>
+                <a href="#">在豆瓣工作</a>
+                <a href="#">联系我们</a>
+                <a href="#">免责声明</a>
+                <a href="#">帮助中心</a>
+                <a href="#">移动应用</a>
+                <a href="#">豆瓣广告</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

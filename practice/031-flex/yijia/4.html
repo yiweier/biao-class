@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一加</title>
+    <style>
+        body {
+            margin: 0;
+            font-size: 12px;
+            font-family: sans-serif;
+            line-height: 1.5;
+        }
+        a{
+            text-decoration: none;
+            color: #666;
+            display: inline-block;
+        }
+        img {
+            width: 100%;
+        }
+        button {
+            background: none;
+            color: #fff;
+            outline: 0;
+            border: 1px solid #ccc;
+            padding: 10px 50px;
+            margin-top: 1.2em;
+            margin-bottom: 1.2em;
+        }
+        .container {
+            max-width: 1080px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .col-lg-1 {
+            flex-basis: 166666666666666%;
+        }
+        .col-lg-2 {
+            flex-basis: 8.333333333333333%;
+        }
+        .col-lg-3 {
+            flex-basis: 12.5%;
+        }
+        .col-lg-4 {
+            flex-basis: 16.666666666666666%;
+        }
+        .col-lg-5 {
+            flex-basis: 20.8333333333333333%;
+        }
+        .col-lg-6 {
+            flex-basis: 25%;
+        }
+        .col-lg-7 {
+            flex-basis: 29.166666666666666%;
+        }
+        .col-lg-8 {
+            flex-basis: 33.333333333333333%;
+        }
+        .col-lg-9 {
+            flex-basis: 37.5%;
+        }
+        .col-lg-10 {
+            flex-basis: 41.666666666666666%;
+        }
+        .col-lg-11 {
+            flex-basis: 45.833333333333333%;
+        }
+        .col-lg-12 {
+            flex-basis: 50%;
+        }
+        .col-lg-13 {
+            flex-basis: 54.166666666666666%;
+        }
+        .col-lg-14 {
+            flex-basis: 58.333333333333333%;
+        }
+        .col-lg-15 {
+            flex-basis: 62.5%;
+        }
+        .col-lg-16 {
+            flex-basis: 66.666666666666666%;
+        }
+        .col-lg-17 {
+            flex-basis: 70.833333333333333%;
+        }
+        .col-lg-18 {
+            flex-basis: 75%;
+        }
+        .col-lg-19{
+            flex-basis: 79.166666666666666%;
+        }
+        .col-lg-20 {
+            flex-basis: 83.333333333333333%;
+        }
+        .col-lg-21 {
+            flex-basis: 87.5%;
+        }
+        .col-lg-22 {
+            flex-basis: 91.666666666666666%;
+        }
+        .col-lg-23 {
+            flex-basis: 95.833333333333333%;
+        }
+        .col-lg-24 {
+            flex-basis: 100%;
+        }
+        .nav a {
+            padding: 20px;
+            font-size: 13px;
+        }
+        .nav a:hover{
+            border-bottom: 2px solid #666;
+        }
+        .nav .link-group a:hover{
+            border-bottom-color: tomato;
+        }
+        .slider {
+            position: relative;
+            font-size: 0;
+        }
+        .slider a {
+            font-size: 0;
+        }
+        .slider .text{
+            position: absolute;
+            text-align: center;
+            top: 30%;
+            right: 25%;
+            color: #fff;
+        }
+        .slider .text .sub-title {
+            font-size: 25px;
+            font-weight: lighter;
+        }
+        .slider .text .title {
+            font-size: 50px;
+            font-weight: bolder;
+        }
+        .slider .text .price {
+            font-size: 30px;
+            font-weight: lighter;
+        }
+        .slider .text .more {
+            font-size: 15px;
+        }
+        .main .picture-group{
+            position: relative;
+            font-size: 0;
+        }
+        .main .picture-group span{
+            position: absolute;
+            top: 0;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .main .banner {
+            position: relative;
+            justify-content: center;
+        }
+        .main .banner .text {
+            position: absolute;
+            text-align: center;
+            
+        }
+        .main .banner .text .title {
+            font-size: 45px;
+            color: #fff;
+        }
+        .card-group {
+		margin-top: 30px;
+
+        }
+        .card-group .container .row{
+            display: flex;
+            /*justify-content: space-between;*/
+            
+        }
+        .card-group .container >.row {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        .card-group .card {
+            margin-left: 10px;
+            margin-right: 10px;
+            box-shadow: 0 2px 3px rgba(0,0,0,.1);
+            transition: all 0.2s;
+        }
+        .card-group .card:hover {
+            transform: translateY(-3px);
+        }
+        .card-group .text {
+            padding: 30px;
+        }
+        .card-group .text .title {
+            font-size: 18px;
+        }
+        .main .service {
+            margin-top: 50px;
+            margin-bottom: 35px;
+        }
+        
+        .main .service .container {
+            padding: 10px;
+            text-align: center;
+        }
+        .main .service .thumbnail {
+            background-image: url(https://statics.oneplus.cn/v2/img/common/serviceIcons-sd81bbaa639.png);
+            background-repeat: no-repeat;
+            width:76px;
+            height:65px;
+            background-position: 0px -400px;
+            display: inline-block;
+        }
+        .main .service a>*{
+            /* align-items: center; */
+            margin: 10px;
+        }
+        .footer .about {
+            padding-top: 20px;
+        }
+        .footer:before,
+        .footer .others:after{
+            content: "";
+            width: 100%;
+            height: 1px;
+            background: rgba(0,0,0,.2);
+            display: inline-block;
+        }
+        .footer .about .left {
+            align-items: flex-start;
+        }
+        .footer .about button{
+            color: #333;
+        }
+
+        .footer .about .left {
+            justify-content: space-evenly;
+            /*text-align: left;*/
+         }
+         .footer .about .left >*{
+            text-align: left;
+         }
+        .footer .about .left >div a {
+            display: block;
+            padding: 10px 0;
+            font-size: 13px;
+        }
+        .footer .about .right >* {
+            text-align: center;
+            padding: 10px;
+            font-size: 15px;
+        }
+        .others {
+            /*padding: 20px;*/
+        }
+        .footer .others .left{
+            font-size: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .others .right a{
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 13px
+        }
+        .meta {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <div class="first-screen ">
+            <div class="nav">
+                <div class="flex container">
+                    <div class="logo">logo</div>
+                    <div class="link-group">
+                        <a href="#">Oneplus 6</a>
+                        <a href="#">商城</a>
+                        <a href="#">服务</a>
+                        <a href="#">品牌</a>
+                        <a href="#">论坛</a>
+                    </div>
+                    <div class="user">
+                        <a href="#">a</a>
+                        <a href="#">b</a>
+                        <a href="#">c</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <a>
+                    <img src="https://image01.oneplus.cn/shop/201806/01/749/31cdecff25e1ae5d9af388070f18926c.jpg">
+                </a>
+                <div class="text">
+                    <div class="sub-title">OnePlus 6</div>
+                    <div class="title">全速起航</div>
+                    <div class="price">¥3199起</div>
+                    <button>立即购买</button>
+                    <div class="more">了解更多</div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="picture-group flex">
+                <div class="picture">
+                    <img src="https://image01.oneplus.cn/shop/201808/27/982/6966b85e5aa37e6d3e11d65d23e3bca4.jpg">
+                    <span>以旧换新</span>
+                </div>
+                <div class="picture">
+                    <img src="https://image01.oneplus.cn/shop/201810/09/1371/055b121c2259c388bfe7f5d767f916c0.jpg">
+                    <span>参赛赢手机</span>
+                </div>
+                <div class="picture">
+                    <img src="https://image01.oneplus.cn/shop/201711/27/1144/04788510f69288329e75c754eff3fa00.jpg">
+                    <span>推荐有礼</span>
+                </div>
+            </div>
+            <div class="banner flex ">
+                <img src="https://image01.oneplus.cn/shop/201809/26/880/8070f60cb10b64a0bcf03d98242947ca.jpg">
+                <div class="text">
+                    <div class="title">Shot on OnePlus</div>
+                    <button>我要参加</button>
+                </div>
+            </div>
+            <div class="card-group">
+                    <div class="container">
+                        <div class="row">
+                            <a class="card">
+                                <div class="img">
+                                    <img src="https://image01.oneplus.cn/shop/201810/22/849/22910d18ae0add39b63a33abfbf7fb87.jpg">
+                                </div>
+                                <div class="text">
+                                    <div class="title">博客</div>
+                                    <div class="desc">百万土豆大叔 Kevin Abosch 和 OnePlus 的影像之缘</div>
+                                </div>
+                            </a>
+                            <a class="card col-4">
+                                <div class="img">
+                                    <img src="https://image01.oneplus.cn/shop/201810/10/644/50a4a33de2e2f5e036f5796e55232aec.jpg">
+                                </div>
+                                <div class="text">
+                                    <div class="title">新闻</div>
+                                    <div class="desc">Oneplus 6t,来了</div>
+                                </div>
+                            </a>
+                            <a class="card col-4">
+                                <div class="img">
+                                    <img src="https://image01.oneplus.cn/shop/201810/17/1834/ab3aa0a023b295546c47212406ef232c.jpg">
+                                </div>
+                                <div class="text">
+                                    <div class="title">技巧</div>
+                                    <div class="desc">Oneplus 6 使用技巧</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <div class="service">
+                <div class="flex container">
+                    <a href="#" class="col-lg-6">
+                        <div class="thumbnail"></div>
+                        <div class="title">7天无理由退货</div>
+                    </a>
+                    <a href="#" class="col-lg-6">
+                        <div class="thumbnail"></div>
+                        <div class="title">15天退货保障</div>
+                    </a>		
+                    <a href="#" class="col-lg-6">
+                        <div class="thumbnail"></div>
+                        <div class="title">30天换货保障</div>
+                    </a>		
+                    <a href="#" class="col-lg-6">
+                        <div class="thumbnail"></div>
+                        <div class="title">99元全场包邮</div>
+                    </a>				
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="about flex">
+                    <div class="left col-lg-18 flex">
+                        <div>
+                            <div class="tab">一加产品</div>
+                            <div class="tab-group">
+                                <a href="#">OnePlus 6</a>
+                                <a href="#">OnePlus 5T</a>
+                                <a href="#">OnePlus 5</a>
+                                <a href="#">OnePlus 3T</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tab">热门活动</div>
+                            <div class="tab-group">
+                                <a href="#">推荐有礼</a>
+                                <a href="#">以旧换新</a>
+                                <a href="#">Shot on OnePlus</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tab">关于一加</div>
+                            <div class="tab-group">
+                                <a href="#">了解一加</a>
+                                <a href="#">加入一加</a>
+                                <a href="#">H2OS</a>
+                                <a href="#">云服务</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tab">服务支持</div>
+                            <div class="tab-group">
+                                <a href="#">购买帮助</a>
+                                <a href="#">用户手册</a>
+                                <a href="#">寄修服务</a>
+                                <a href="#">服务中心</a>
+                                <a href="#">联系我们</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right col-lg-6">
+                        <div class="tel">400-888-1111</div>
+                        <div class="but">
+                            <button>在线客服</button>
+                        </div>
+                        <div class="time">周一至周日 9:00 - 22:00</div>
+                        <div class="more"></div>
+                    </div>
+                </div>
+                <div class="others">
+                    <div class="container flex">
+                        <div class="left">中国( 简体中文/CNY )</div>
+                        <div class="right">
+                            <a href="#">隐私政策</a>
+                            <a href="#">用户协议</a>
+                            <a href="#">安全问题反馈</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="meta flex between ">
+                    <div class="left">© 2013-2018 OnePlus. All Rights Reserved. (粤ICP备13080605号-4)</div>
+                    <div class="right"></div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

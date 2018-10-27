@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>讨论精选(豆瓣)</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .row:before,
+        .row:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .col-1 {
+        width: 4.166666666666666%;
+        }
+        .col-2 {
+            width: 8.333333333333333%;
+        }
+        .col-3 {
+            width: 12.5%;
+        }
+        .col-4 {
+            width: 16.666666666666666%;
+        }
+        .col-5 {
+            width: 20.833333333333333%;
+        }
+        .col-6 {
+            width: 25%;
+        }
+        .col-7 {
+            width: 29.166666666666666%;
+        }
+        .col-8 {
+            width: 33.333333333333333%;
+        }
+        .col-9 {
+            width: 37.5%;
+        }
+        .col-10 {
+            width: 41.666666666666666%;
+        }
+        .col-11 {
+            width: 45.833333333333333%;
+        }
+        .col-12 {
+            width: 50%;
+        }
+        .col-13 {
+            width: 54.166666666666666%;
+        }
+        .col-14 {
+            width: 58.333333333333333%;
+        }
+        .col-15 {
+            width: 62.5%;
+        }
+        .col-16 {
+            width: 66.666666666666666%;
+        }
+        .col-17 {
+            width: 70.833333333333333%;
+        }
+        .col-18 {
+            width: 75%;
+        }
+        .col-19 {
+            width: 79.166666666666666%;
+        }
+        .col-20 {
+            width: 83.333333333333333%;
+        }
+        .col-21 {
+            width: 87.5%;
+        }
+        .col-22 {
+            width: 91.666666666666666%;
+        }
+        .col-23 {
+            width: 95.833333333333333%;
+        }
+        .col-24 {
+            width: 100%;
+        }
+        .col {
+            float: left;
+            border: solid;
+        }
+        .col.right>* {
+            float: right;
+        }
+        .global {
+            background: rgba(84,86,82,.7);
+            padding: 5px;
+            font-size: 80%;
+        }
+        .page {
+            background: #F1F6F3;
+            padding: 30px 80px;
+            /* padding-left: 80px; */
+        }
+        .logo {
+            /* padding: 3px; */
+        }
+        .subject>.row {
+            /* padding: 40px 80px; */
+            margin: 40px 80px;
+        }
+        /* .subject .left,
+        .subject .right {
+            padding：20px;
+        } */
+        .like {
+            padding: 10px 10px;
+            background: rgba(250,233,218,1);
+            font-size: 80%;
+        }
+        .like>* {
+            color: red;
+        }
+        .subject right:before,
+        .subject right:after {
+            content: "";
+            display: bloce;
+            clear: both;
+        }
+        .subject .right * {
+            float: left;
+        }
+        .timeline {
+            padding: 0 20px;
+        }
+        .timeline > * :not(first-of-type) {
+            padding: 10px 0;
+        }
+        .timeline >:nth-child(2){
+            background: rgb(249,249,249);
+        }
+        .text-preview {
+            font-size: 80%;
+            color: gray;
+        }
+        .timeline >:last-of-type{
+            font-size: 80%;
+        }
+        .dynamic * {
+            font-size: 90%;
+            padding: 5px;
+        }
+        .recommend,.dynamic{
+            padding-bottom: 20px;
+        }
+        .row {
+            border: solid tomato;
+        }
+
+
+        .meta-information> * {
+            font-size: 80%;
+            padding: 40px 80px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="row nav global">
+        <div class="col left col-12">
+            <a class="col col-2" href="#">豆瓣</a>
+            <a class="col col-2" href="#">读书</a>
+            <a class="col col-2" href="#">电影</a>
+            <a class="col col-2" href="#">音乐</a>
+            <a class="col col-2" href="#">同城</a>
+            <a class="col col-2" href="#">小组</a>
+            <a class="col col-2" href="#">阅读</a>
+            <a class="col col-2" href="#">FM</a>
+            <a class="col col-2" href="#">时间</a>
+            <a class="col col-2" href="#">豆品</a>
+            <a class="col col-2" href="#">更多</a>
+        </div>
+        <div class="col right col-12">
+            <a class="col col-2" href="#">注册</a>
+            <a class="col col-2" href="#">登录</a>
+            <a class="col col-5" href="#">下载豆瓣客户端</a>
+        </div>
+    </div>
+    <div class="row nav page">
+        <div class="col left col-16">
+            <a class="col logo col-4">豆瓣小组
+                <img src="#" alt="">
+            </a>
+            <div class="col col-20">
+                <div class="col col-3"></div>
+                <div class="col col-3">精选</div>
+                <div class="col col-3">文化</div>
+                <div class="col col-3">行摄</div>
+                <div class="col col-3">娱乐</div>
+                <div class="col col-3">时尚</div>
+                <div class="col col-3">生活</div>
+                <div class="col col-3">科技</div>
+            </div>
+        </div>
+        <div class="col right col-8">
+            <input type="search" placeholder="小组、话题">
+        </div>
+    </div>
+    <div class="row subject">
+        <div class="row title" style="font-size: 170%;">讨论精选</div>
+        <div class="row">
+            <div class="col left col-16">
+                <div class="row">
+                    <div class="col like col-2">
+                        <div class="row">14</div>
+                        <div class="row">喜欢</div>
+                    </div>
+                    <div class="col timeline col-22">
+                        <a class="row title" href="#">开给网络小说成瘾患者的治疗方案</a>
+                        <div class="row">
+                            <div class="col thumbnail col-3">
+                                <img src="http://dummyimage.com/6*6" alt="">
+                            </div>
+                            <a class="col text-preview col-18" href="#">--------- 疾病名称：网络小说成瘾 ---------
+                                临床表现：看小说无法自拔，耽误工作学习，影响睡眠，影响正常的人际交往，精神状态萎靡，久坐久卧影响健康，视力下降，记忆力下降 -------...</a>
+                        </div>
+                        <div class="row">
+                            <div class="col from col-6">来自戒掉网络小说小组</div>
+                            <div class="col date col-3" style="color: gray;">09-30</div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col like col-2">
+                        <div class="row">14</div>
+                        <div class="row">喜欢</div>
+                    </div>
+                    <div class="col timeline col-22">
+                        <a class="row title" href="#">开给网络小说成瘾患者的治疗方案</a>
+                        <div class="row">
+                            <div class="col thumbnail col-3">
+                                <img src="http://dummyimage.com/6*6" alt="">
+                            </div>
+                            <a class="col text-preview col-18" href="#">--------- 疾病名称：网络小说成瘾 ---------
+                                临床表现：看小说无法自拔，耽误工作学习，影响睡眠，影响正常的人际交往，精神状态萎靡，久坐久卧影响健康，视力下降，记忆力下降 -------...</a>
+                        </div>
+                        <div class="row">
+                            <div class="col from col-6">来自戒掉网络小说小组</div>
+                            <div class="col date col-3" style="color: gray;">09-30</div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="col right col-8">
+                <div class="row recommend">值得加入的小组</div>
+                <div class="row dynamic">
+                    <div class="col thumbnail col-6">
+                        <img src="http://dummyimage.com/6*6" alt="">
+                    </div>
+                    <div class="col col-16">
+                        <a class="col title" href="#">All about bra | 关于bra的一切</a>
+                        <div class="col">
+                            <div class="col member">374341个爱Bra爱生活</div>
+                            <a class="col join" href="#">+加入小组</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row dynamic">
+                    <div class="col thumbnail col-6">
+                        <img src="http://dummyimage.com/6*6" alt="">
+                    </div>
+                    <div class="col col-16">
+                        <a class="col title" href="#">All about bra | 关于bra的一切</a>
+                        <div class="col">
+                            <div class="col member">374341个爱Bra爱生活</div>
+                            <a class="col join" href="#">+加入小组</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row dynamic">
+                    <div class="col thumbnail col-6">
+                        <img src="http://dummyimage.com/6*6" alt="">
+                    </div>
+                    <div class="col col-16">
+                        <a class="col title" href="#">All about bra | 关于bra的一切</a>
+                        <div class="col">
+                            <div class="col member">374341个爱Bra爱生活</div>
+                            <a class="col join" href="#">+加入小组</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row meta-information">
+        <div class="col left col-12">© 2005－2018 douban.com, all rights reserved 北京豆网科技有限公司</div>
+        <div class="col right col-12">
+            <a class="col col-3" href="#">关于豆瓣</a>
+            <a class="col col-4" href="#">在豆瓣工作</a>
+            <a class="col col-3" href="#">联系我们</a>
+            <a class="col col-3" href="#">免责声明</a>
+            <a class="col col-3" href="#">帮助中心</a>
+            <a class="col col-3" href="#">移动应用</a>
+            <a class="col col-3" href="#">豆瓣广告</a>
+        </div>
+    </div>
+</body>
+
+</html>

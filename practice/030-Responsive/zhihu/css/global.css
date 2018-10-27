@@ -1,0 +1,58 @@
+/* ==========global=========== */
+.global {
+    box-shadow: 0 1px 3px #ccc;
+    color: #444;
+    background: #fff;
+    margin-right: -2.7rem;
+}
+svg {
+    fill: #8590a6;
+}
+form {
+    margin-top: 1rem;
+}
+input {
+    width: 280px;
+}
+button {
+    width: 50px;
+}
+
+input:focus,
+button:focus {
+    border: 1px solid #0084ff;
+}
+button:hover {
+    background: #0084ff;
+    color: #eee;
+}
+.blue svg{
+    fill: #0084ff;
+}
+.global .logo {
+    margin-top: 1.2rem;
+}
+.global .link-group a {
+    padding: 2rem 1.5rem;
+    font-size: 15px;
+}
+.global .link-group a:nth-child(2),
+.global .link-group a:last-child{
+    color: #8590a6;
+}
+.global .link-group a:nth-child(2):hover,
+.global .link-group a:last-child:hover {
+    color: lightblue;
+}
+.global .right img {
+    width: 35px;
+    display: inline-block;
+}
+.global .right>* {
+    padding: 1rem 1.5rem;
+    vertical-align: middle;
+    text-align: right;
+}
+
+/* ==============main============== */
+

@@ -1,0 +1,103 @@
+@media screen and (max-width: 900px) {
+    .col-md-1 {
+        flex-basis: 4.166666666666666%;
+    }
+    .col-md-2 {
+        flex-basis: 8.333333333333333%;
+    }
+    .col-md-3 {
+        flex-basis: 12.5%;
+    }
+    .col-md-4 {
+        flex-basis: 16.666666666666666%;
+    }
+    .col-md-5 {
+        flex-basis: 20.8333333333333333%;
+    }
+    .col-md-6 {
+        flex-basis: 25%;
+    }
+    .col-md-7 {
+        flex-basis: 29.166666666666666%;
+    }
+    .col-md-8 {
+        flex-basis: 33.333333333333333%;
+    }
+    .col-md-9 {
+        flex-basis: 37.5%;
+    }
+    .col-md-10 {
+        flex-basis: 41.666666666666666%;
+    }
+    .col-md-11 {
+        flex-basis: 45.833333333333333%;
+    }
+    .col-md-12 {
+        flex-basis: 50%;
+    }
+    .col-md-13 {
+        flex-basis: 54.166666666666666%;
+    }
+    .col-md-14 {
+        flex-basis: 58.333333333333333%;
+    }
+    .col-md-15 {
+        flex-basis: 62.5%;
+    }
+    .col-md-16 {
+        flex-basis: 66.666666666666666%;
+    }
+    .col-md-17 {
+        flex-basis: 70.833333333333333%;
+    }
+    .col-md-18 {
+        flex-basis: 75%;
+    }
+    .col-md-19{
+        flex-basis: 79.166666666666666%;
+    }
+    .col-md-20 {
+        flex-basis: 83.333333333333333%;
+    }
+    .col-md-21 {
+        flex-basis: 87.5%;
+    }
+    .col-md-22 {
+        flex-basis: 91.666666666666666%;
+    }
+    .col-md-23 {
+        flex-basis: 95.833333333333333%;
+    }
+    .col-md-24 {
+        flex-basis: 100%;
+    }
+    body {
+        font-size: 13px;
+    }
+    .head {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .head .title>* {
+        padding: .2em;
+        font-size: 70px;
+    }
+    .head .describe {
+        font-size: 22px;
+        padding-top: 16px;
+    }
+    .main .subject {
+        display: inline-block;
+    } 
+    .main .logo span{
+        position: absolute;
+        left: 63px;
+    }
+    .main .middle .paging{
+        width: 100%;
+        margin-left: 0;
+    }
+    .main .left .text>* {
+        display: inline-block;
+    }
+}
