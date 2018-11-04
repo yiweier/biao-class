@@ -1,0 +1,30 @@
+<style>
+  * {
+    -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;
+  }
+
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .parent:after {
+    width: 33.3333333333333%;
+    content: '';
+  }
+
+  .child {
+    width: 33.3333333333333%;
+    height: 20px;
+    border: solid;
+  }
+</style>
+
+<div class="parent">
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+</div>

@@ -1,0 +1,183 @@
+input,
+button{
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.3);
+}
+.header .search .left .logo,
+.header .search .container {
+    align-items: center;
+}
+.header .search .left {
+    flex-grow: 1;
+}
+.header .search .left span {
+    font-size: 15px;
+    margin-left: 1.5em;
+}
+.header .logo img{
+	width: 80px;
+	height: 80px;
+	border-radius: 100px;
+}
+.header .search form {
+    flex-grow: 2;
+    position: relative;
+}
+/* .header .search input,
+.header .search button {
+    margin-top: 1.5em;
+} */
+.header .search input {
+    width: 80%;
+    font-size: 14px;
+}
+.header .search button {
+    background: url(../img/home/search-icon.png);
+    background-position: 4px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    height: 50px;
+    border: 0;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -55px;
+}
+.header .search input:focus {
+    border-color: #f94444;
+}
+.header {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+
+
+
+
+
+
+
+
+.main .sale .container {
+	justify-content: space-between;
+}
+.main .sale .container .left {
+	margin-right: 1.5em;
+	background: url(../img/home/buou.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100%;
+}
+.main .sale .container .right div:hover{
+	border: 1px solid rgba(249,68,68,.5);
+}
+.main .sale .container .left .text {
+	margin-top: 8em;
+}
+.main .sale .container .left .text >* {
+	margin: 1em;
+}
+.main .sale .container .left .text .title {
+	font-size: 30px;
+}
+.main .sale .container .left .text .desc{
+	font-size: 17px;
+}
+.main .sale .container .left .text .price{
+	font-size: 20px;
+}
+
+
+
+
+/* .main .line .row {
+    align-items: center;
+}
+.main .line .more img{
+    padding: 3em;
+}
+.product .theme .title,
+.product .theme .desc {
+	margin: 1em 0.5em;
+}
+.main .line.product .card-group .row{
+    flex-wrap: nowrap;
+}
+.product.line .card-group a{
+    padding: 0;
+}
+.product.line .card-group .row {
+    margin-left: 0;
+    margin-right: 0;
+} */
+
+
+
+
+
+.product {
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+.product .theme {
+	justify-content: flex-start;
+}
+.product .card-group .row {
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    align-items: center;
+}
+.product .theme .title {
+	font-size: 20px;
+	flex-grow: 1;
+	font-weight: bold;
+}
+.product .theme .desc{
+	flex-grow: 2;
+}
+.product .card {
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+
+}
+.product .card-group a {
+	padding: 10px;
+}
+.product{
+	flex-wrap: wrap;
+}
+.product .card .img {
+	padding: 20px;
+	padding-bottom: 0;
+	transition: all 0.5s;
+}
+.product .card .img:hover {
+	transform: scale(1.2);
+}
+.product .card .text >*{
+	padding: 10px;
+}
+.main .product .more img{
+    padding: 3em;
+}
+
+
+
+
+
+
+
+.slider {
+    background: url(../img/home/home-slider.jpg);
+    background-repeat: no-repeat;
+	background-size: 100%;
+}
+.slider .text {
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+.slider .text .title {
+    padding: 3em;
+    font-size: 30px;
+}
+
+

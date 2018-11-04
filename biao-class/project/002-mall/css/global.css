@@ -1,0 +1,44 @@
+/*========header======*/
+.header .nav {
+    background: #eee;
+}
+.header .container {
+	justify-content: space-between;
+}
+.header .nav .left,
+.header .nav .middle>* {
+    padding: 1em;   
+}
+.header .nav a:hover{
+    color: #f94444;
+}
+.header .container,
+.header .container .left,
+.header .container .left .logo{
+	align-items: center;
+}
+
+.header .logo span{
+	color: #f94444;
+	/*font-weight: bold;*/
+}
+.header .right *,
+.header .left >*{
+	margin: .8em 1em;
+}
+.header .left .logo span {
+	margin-left: .5em;
+}
+.footer {
+    background: #666;
+}
+.footer .row{
+    align-items: center;
+    justify-content: space-between;
+}
+.footer a{
+    padding: 2em 1em;
+}
+.footer a:hover {
+    color: #ccc;
+}

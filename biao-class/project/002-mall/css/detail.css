@@ -1,0 +1,166 @@
+.row {
+    justify-content: space-between;
+}
+.nav.page:after{
+    content: "";
+    border-bottom: 2px solid #f94444;
+    display: block;
+}
+.nav.page .container .left a,
+.main .position .container >*{
+    font-size: 15px;
+}
+.nav.page .container .left a {
+    padding: 1em 3em;
+    font-weight: bold;
+}
+.nav.page .container .left a:hover{
+    background: #f94444;
+}
+.nav.page .container .left a ,
+.nav.page .container .right a{
+    margin-top: 1em;
+}
+.nav.page .container .right a{
+    padding: 1em;
+
+}
+.main .position .container a:hover,
+.nav.page .container .right a:hover{
+    color: #f94444;
+}
+
+
+.main .position .container >*{
+    padding: 2em 1em;
+    font-size: 14px;
+}
+
+.product .left .product-intro .picture{
+    box-shadow: 1px 1px 3px rgba(0,0,0,.3);
+    margin: 1em;
+    display: inline-block;
+}
+.product .left .img .thumbnail,
+.product .left .product-intro{
+    justify-content: flex-start;
+}
+.product .left .product-intro .thumbnail>* {
+    margin: 1em;
+}
+.product .left .text * {
+    padding: .5rem;
+}
+.product .left .text >*{
+    margin: 1rem;
+    margin-left: 2rem;
+    font-size: 14px;
+}
+.product .left .text .title {
+    font-size: 20px;
+    padding: 1rem;
+
+}
+.product .left .text .coupon>a {
+    border: 1px solid rgba(249,68,68,.5);
+    background: rgba(249,68,68,.5);
+}
+.product .left .text .price span:nth-child(4) {
+    color: #fd0000;
+    font-weight: bold;
+}
+.product .left .text .specification a:hover,
+.product .left .text .location a{
+    border: 3px solid rgba(249,68,68,.5);
+}
+.product .left .text .buy a:hover,
+.product .left .text .location a:hover {
+    color: #f94444; 
+}
+.product .left .text .specification a{
+    border: 3px solid transparent;
+}
+.product .left .text .amount {
+    align-items: center;
+    justify-content: flex-start;
+}
+.product .left .text .amount form {
+    position: relative;
+}
+
+.product .left .text .amount form span {
+    border: 1px solid #f94444;
+    padding-left: 4em;
+    padding-right: 4em;
+    border-radius: 5px;
+    
+}
+.product .left .text .amount form button{
+    border: 0;
+    position: absolute;
+    top: 1px;
+}
+.product .left .text .amount form button:nth-of-type(2) {
+    right: 6px;
+}
+.product .left .text .buy a {
+    margin-right: 4em;
+}
+.product .left .tab-group{
+    cursor: pointer;
+    justify-content: flex-start;
+}
+.product .left .tab-group >*{
+    padding: 1em 2em;
+    border: solid 3px transparent;
+    border-bottom: 0;
+}
+.product .left .tab-group >*:hover{
+    border: solid 3px rgba(249,68,68,.8);
+    border-bottom: 0;
+}
+.product .left .tab-group {
+    border-bottom: 3px solid rgba(249,68,68,.8);
+}
+.product .left .desc {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.main .product .right {
+    margin-left: 1em;
+}
+.main .product .right .theme{
+    padding-top: 1em;
+}
+.main .product .right .card-group:before{
+    content: "";
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+.card-group {
+    padding-top: 1em;
+}
+.card-group .card {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+.card-group .card img {
+    width: 50%
+}
+
+.card-group .card .text >* {
+    margin-bottom: .5em;
+}
+.card-group .card .text .title {
+    font-size: 15px;
+}
+.card-group .card .text .price {
+    color: #f94444;
+    font-weight: 500px;
+}
+.card-group .card:after{
+    border-bottom: dashed 1px rgba(0,0,0,.2);
+    content: "";
+    display: block;
+}
