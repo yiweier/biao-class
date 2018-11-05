@@ -56,18 +56,17 @@ button{
 
 
 
-
 .main .sale .container {
-	justify-content: space-between;
+    justify-content: space-between;
+    align-items: stretch;
 }
 .main .sale .container .left {
 	margin-right: 1.5em;
 	background: url(../img/home/buou.jpg);
 	background-repeat: no-repeat;
-	background-position: top center;
-	background-size: 100%;
+	background-size: cover;
 }
-.main .sale .container .right div:hover{
+.main .sale .container .right div img:hover{
 	border: 1px solid rgba(249,68,68,.5);
 }
 .main .sale .container .left .text {
@@ -181,3 +180,85 @@ button{
 }
 
 
+
+
+@media screen and (max-width: 800px){
+    .search .container {
+        display: block;
+    }
+    .search .container form{
+        text-align: center;
+        margin: 1em;
+    }
+    .header .search input {
+        width: 100%;
+    }
+    .header .search button {
+        top: 0;
+        right: 0;
+    }
+    .main .product .more img {
+        padding: 2em;
+    }
+    .main .sale .container {
+        display: block;
+    }
+    .main .sale .container .left {
+        margin-right: 0;
+        background-size: 100%;
+    }
+    .main .sale .container .left .text{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    .main .sale .container .left .text .title{
+        font-size: 25px;
+    }
+    .main .sale .container .left .text .desc{
+        font-size: 15px;
+    }
+    .main .sale .container .left .text .price {
+        font-size: 17px;
+    }
+    .main .sale .container .right {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: .5em;
+    }
+    .main .sale .container .right div img {
+        height: 90%;
+    }
+@media screen and (max-width: 450px) {
+    input, button {
+        padding: 1em;
+    }
+    .header .search {
+        margin-top: 10px;
+    }
+    .header .search .left span {
+        font-size: 13px;
+        margin-left: 0.5em;
+    }
+    .header .search button {
+        top: -6px;
+    }
+    .search .container form {
+        margin: 0;
+        margin-bottom: 1em;
+    }
+    .product {
+        margin-top: 1em;
+    }
+    .product .theme .desc{
+        font-size: 11px;
+        margin-top: .5em;
+        margin-bottom: .5em;
+        
+    }
+    .main .product .more img {
+        padding: 30%;
+    }
+    .main .sale {
+        display: none;
+    }
+}

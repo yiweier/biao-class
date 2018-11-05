@@ -42,3 +42,56 @@
 .footer a:hover {
     color: #ccc;
 }
+@media screen and (max-width: 800px){
+    .header .nav .left, .header .nav .middle>* {
+        padding: .5em;
+    }
+    .footer .row{
+        display: block;
+    }
+    .footer a{
+        padding: 2em .6em;
+    }
+    .footer .meta{
+        padding-bottom: 2em;
+        padding-left: 0.6em;
+    }
+}
+@media screen and (max-width: 450px){
+    /* .header .right *, .header .left >*{
+        margin: .8em .2em;
+    } */
+    /* .header .nav .left, .header .nav .middle>* {
+        padding: 0em;
+    } */
+    .nav.global * {
+        font-size: 11px;
+        padding-top: 10px;
+    }
+    .nav.global .container{
+        flex-wrap: wrap;
+    }
+    .nav.global .right{
+        padding-top: 0;
+        text-align: left;
+    }
+    .header .global .left, .header .nav .middle>* {
+        margin: .3em;
+    }
+    .header .global.right *{
+        margin: 0;
+    }
+    .header .search .logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .footer a,
+    .footer .meta {
+        font-size: 11px;
+        padding: 1em 0;
+    }
+    .footer {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}

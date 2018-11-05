@@ -1,5 +1,6 @@
 .row {
     justify-content: space-between;
+    
 }
 .nav.page:after{
     content: "";
@@ -163,4 +164,65 @@
     border-bottom: dashed 1px rgba(0,0,0,.2);
     content: "";
     display: block;
+}
+@media screen and (max-width: 800px){
+    .main .position .container >*{
+        padding: .5em;
+        padding-top: 1em;
+    }
+    .main .product .container {
+        flex-wrap: wrap;
+    }
+    .product .left .desc{
+        margin-bottom: 0;
+    }
+    .main .product .right .card-group{
+        display: flex;
+    }
+    .product .left .text >* {
+        margin: 0;
+        margin-left: 1rem;
+        font-size: 12px;
+        padding: .3em .5em;
+    }
+    .product .left .text .location a{
+        border: 1px solid rgba(249,68,68,.5);
+    }
+    .product .left .text .amount >* {
+        padding-left: .3em;
+        padding-right: .3em;
+    }
+    .product .left .text .buy a{
+        margin-right: 0;
+    }
+    .card-group .card {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 450px){
+    .nav.page .container {
+        align-items: center;
+    }
+    .nav.page .container .left a {
+        padding: 1em;
+    }
+    .nav.page .container .right a {
+        padding: .5em;
+    }
+    .main .position .container >*{
+        padding: 0;
+        padding-top: 1em;
+        font-size: 10px;
+    }
+    .product .left .product-intro {
+        flex-wrap: wrap;
+    }
+   
+    .product .left .product-intro img {
+        /* width: 80%; */
+    }
+    .card-group .card .text .desc,
+    .card-group .card .text .title{
+        font-size: 12px;
+    }
 }
