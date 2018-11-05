@@ -218,9 +218,6 @@
         flex-wrap: wrap;
     }
    
-    .product .left .product-intro img {
-        /* width: 80%; */
-    }
     .card-group .card .text .desc,
     .card-group .card .text .title{
         font-size: 12px;
